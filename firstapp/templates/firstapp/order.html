@@ -1,0 +1,79 @@
+{% extends 'firstapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+
+          </ul>
+  </ul>
+
+  </div>
+  </div>
+  </nav>
+  <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+      <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+      <!-- <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide "></button> -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static '/placeorder.png'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    <br>
+
+  </div>
+  <ul  class="nav justify-content-center" >
+  <div class="card-group" style="width: 18rem;">
+    <img src="{% static '/pnpaytm.png'%}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"><h2>Pay With: 9109675574</h2></p>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <img src="{% static '/barcode.jpg'%}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><h2>For Google Pay,Phone Pay,Upi : Scan This barcode or pay using : 9109675574 </h2> </p>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="card-group" style="width: 18rem;">
+    <img src="{% static '/upi.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"><h2>For UPI payments use UPI ID: 9109675574@paytm</h2></p>
+    </div>
+</div>
+</div>
+</ul>
+<br>
+<ul class="nav justify-content-center">
+  <h3>
+    You will get an Email of Your Order Confirmation after your payment is completed.
+    
+  </h3>
+  <h5>For help and Enquiry Contact : nspromotion741@gmail.com </h5>
+</ul>
+
+{% endblock %}
